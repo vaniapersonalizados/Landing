@@ -8,9 +8,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: url('https://cdn.pixabay.com/photo/2017/08/07/03/56/slippers-2604991_1280.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: #333;
+      background: #fff0f5;
       position: relative;
       overflow-x: hidden;
     }
@@ -24,7 +22,7 @@
       background-image: url('https://cdn.pixabay.com/photo/2016/04/01/10/19/polka-dot-1302034_960_720.png');
       background-repeat: repeat-y;
       background-size: contain;
-      opacity: 0.4;
+      opacity: 0.3;
       z-index: 0;
     }
 
@@ -37,7 +35,7 @@
     }
 
     header {
-      background: rgba(255, 192, 203, 0.9);
+      background: #ffc0cb;
       padding: 30px 20px;
       text-align: center;
       color: #fff;
@@ -45,29 +43,42 @@
       z-index: 1;
     }
 
-    header img {
-      width: 90px;
+    header img.logo {
+      width: 80px;
       margin-bottom: 10px;
     }
 
     header h1 {
-      font-size: 3em;
+      font-size: 2.8em;
       margin: 0;
       font-weight: bold;
       color: #fff;
-      text-shadow: 2px 2px #ff7da6;
+      text-shadow: 1px 1px #ff69b4;
     }
 
     header p {
       font-size: 1.4em;
       margin-top: 10px;
       font-style: italic;
+      color: #fff;
+    }
+
+    .main-image {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .main-image img {
+      width: 300px;
+      max-width: 90%;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
 
     section {
       padding: 40px 20px;
       text-align: center;
-      background-color: rgba(255,255,255,0.85);
+      background-color: rgba(255,255,255,0.9);
       position: relative;
       z-index: 1;
     }
@@ -129,10 +140,14 @@
 <body>
 
   <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/2933/2933188.png" alt="Logo com agulha e linha" />
+    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/2933/2933188.png" alt="Logo com agulha e linha" />
     <h1>Vânia Chinelos Personalizados</h1>
     <p>Seus pés merecem estilo e qualidade!</p>
   </header>
+
+  <div class="main-image">
+    <img src="https://cdn.pixabay.com/photo/2017/08/07/03/56/slippers-2604991_1280.jpg" alt="Chinelos personalizados" />
+  </div>
 
   <section>
     <h2>Chinelos feitos com carinho, criatividade e muito capricho!</h2>
